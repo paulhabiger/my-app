@@ -1,0 +1,26 @@
+{
+  "name": "@habs/npm",
+  "version": "1.0.0",
+  "description": "npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "habs",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulhabiger/npm.git"
+  },
+  "keywords": [
+    "git",
+    "some"
+  ],
+  "bugs": {
+    "url": "https://github.com/paulhabiger/npm/issues"
+  },
+  "homepage": "https://github.com/paulhabiger/npm#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
