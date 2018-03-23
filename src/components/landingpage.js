@@ -29,11 +29,11 @@ class Landing extends Component {
                                     <i className="fa fa-github-square"   aria-hidden="true" />
                                 </a>
                                 {/* Freecodecamp */}
-                                <a href="./contact" rel="noopener noreferrer">
+                                <a href="./" rel="noopener noreferrer">
                                     <i className="fa fa-envelope"   aria-hidden="true" />
                                 </a>
                                 {/* Youtube */}
-                                <a href="./contact" rel="noopener noreferrer">
+                                <a href="./" rel="noopener noreferrer">
                                     <i className="fa fa-phone-square"   aria-hidden="true" />
                                 </a>
                             </div>
