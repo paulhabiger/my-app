@@ -92,14 +92,18 @@ class Projects extends Component {
                     <Tab>MondoDB</Tab>
                 </Tabs>
 
-                <Grid>
+                <Grid className="projects-body">
                     <Cell col={12}>
                         <div className="content">{this.toggleCategories()}</div>
                     </Cell>
                 </Grid>
+               
+
             </div>
         )
     }
+
+    
 }
 
 export default Projects;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Tooltip } from 'react-mdl';
 
 class Landing extends Component {
     render() {
@@ -16,24 +16,25 @@ class Landing extends Component {
                             <h1>Full Stack Web Developer</h1>
 
                             <hr/>
-                            <p>HTML/CSS | JavaScript | React | NodeJS | Express | MongoDB</p>
+                            <p>HTML/CSS | JavaScript | React | NodeJS | Angular </p>
                             
                             <div className="social-links">
+                                
                                 {/* LinkedIn */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/paul-habiger-249292156/" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square"   aria-hidden="true" />
                                 </a>
                                 {/* GitHub */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://github.com/paulhabiger" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square"   aria-hidden="true" />
                                 </a>
                                 {/* Freecodecamp */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-free-code-camp"   aria-hidden="true" />
+                                <a href="mailto:jobforpaulh@gmail.com" rel="noopener noreferrer" target="_blank">
+                                    <i className="fa fa-envelope"   aria-hidden="true" />
                                 </a>
                                 {/* Youtube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube-square"   aria-hidden="true" />
+                                <a href="/" rel="noopener noreferrer">
+                                    <i className="fa fa-skype"   aria-hidden="true" />
                                 </a>
                             </div>
                         </div>
