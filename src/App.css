@@ -14,6 +14,11 @@
   left: 0;
   width: 100%;
   height: 100%;
+  font-family: Wellfleet, cursive;
+}
+
+.landing-grid h1 {
+  font-family: Wellfleet, cursive;
 }
 
 .projects-body {
@@ -48,14 +53,30 @@
 .about-grid {
   text-align: center;
   justify-content: center;
-  width: 65%;
-  height: 550px;
+  width: 45%;
   background: white;
   margin-bottom: 20px;
 }
 
+.about-grid h1 {
+  font-family: 'Rye', sans-serif;
+  font-size: 80px;
+}
+
 .about-grid h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Rye', sans-serif;
+}
+
+.about-grid h3 {
+  font-family: 'Wellfleet', cursive;
+}
+
+.about-grid h4 {
+  font-family: 'Rye', sans-serif;
+}
+
+.about-grid h5 {
+  font-family: 'Rye', sans-serif;
 }
 
 .about-grid p {
@@ -64,8 +85,8 @@
 }
 
 .about-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
+  border-top: 5px double black;
+  width: 90%;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
