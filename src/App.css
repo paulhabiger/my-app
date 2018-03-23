@@ -88,6 +88,11 @@
   padding-top: 5em;
 }
 
+.resume-link {
+  text-decoration: none;
+  color: black;
+}
+
 .banner-text {
   background-color: black;
   opacity: 8;
