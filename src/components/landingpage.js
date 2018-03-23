@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell, Tooltip } from 'react-mdl';
+import { Grid, Cell } from 'react-mdl';
 
 class Landing extends Component {
     render() {
@@ -29,12 +29,12 @@ class Landing extends Component {
                                     <i className="fa fa-github-square"   aria-hidden="true" />
                                 </a>
                                 {/* Freecodecamp */}
-                                <a href="mailto:jobforpaulh@gmail.com" rel="noopener noreferrer" target="_blank">
+                                <a href="./contact" rel="noopener noreferrer">
                                     <i className="fa fa-envelope"   aria-hidden="true" />
                                 </a>
                                 {/* Youtube */}
-                                <a href="/" rel="noopener noreferrer">
-                                    <i className="fa fa-skype"   aria-hidden="true" />
+                                <a href="./contact" rel="noopener noreferrer">
+                                    <i className="fa fa-phone-square"   aria-hidden="true" />
                                 </a>
                             </div>
                         </div>
