@@ -3,7 +3,6 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import mug from './images/mug.png';
 
 class Resume extends Component {
     render() {
@@ -11,6 +10,8 @@ class Resume extends Component {
             <div>
                 <Grid>
                     <Cell col={4}>
+                        
+
                         <h2 style={{paddingTop: '2em'}}>Paul Habiger</h2>
                         <h4 style={{color: 'grey'}}>Programmer / Systems Admin / Information Security</h4>
                         <hr style={{borderTop: '3px solid #e22947', width: '50%'}}/>
