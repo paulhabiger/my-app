@@ -7,7 +7,7 @@ class Landing extends Component {
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img style={{width: '28%', height: "auto"}}
+                        <img style={{width: '75%', height: "auto"}}
                             src="https://www.shareicon.net/data/512x512/2016/11/28/857840_people_512x512.png"
                             alt="nerd"
                             className="nerd-img"
@@ -28,11 +28,11 @@ class Landing extends Component {
                                 <a href="https://github.com/paulhabiger" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square"   aria-hidden="true" />
                                 </a>
-                                {/* Freecodecamp */}
+                                {/* Email */}
                                 <a href="./" rel="noopener noreferrer">
                                     <i className="fa fa-envelope"   aria-hidden="true" />
                                 </a>
-                                {/* Youtube */}
+                                {/* Phone */}
                                 <a href="./" rel="noopener noreferrer">
                                     <i className="fa fa-phone-square"   aria-hidden="true" />
                                 </a>
