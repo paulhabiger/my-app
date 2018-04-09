@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-    <Layout>
+    <Layout Header>
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Paul Habiger</Link>} scroll>
             <Navigation>
                 <Link to="/aboutme">About Me</Link>
@@ -29,6 +29,7 @@ class App extends Component {
             <div className="page-content" />
             <Main/>
         </Content>
+        
     </Layout>
 </div>
     );
