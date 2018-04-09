@@ -1,56 +1,47 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-//import mug from './images/mug.png';
+import { Grid, Cell } from 'react-mdl';
+import mug from './images/mug.png';
 
-class Contact extends Component {
+class About extends Component {
     render() {
         return (
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    <Cell col={6}>
-                        <h2>Paul Habiger</h2>
+                    <Cell col={12}>
+                        <div className="contact-heading">
+                        <h1>FOR HIRE!</h1>
                         <img
-                            //src={mug}
-                            src="https://www.shareicon.net/data/512x512/2016/11/28/857840_people_512x512.png"
+                            src={mug}
                             alt="avatar"
                             style={{height: '250px'}}
                         />
-                        <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>
-                        <h3 style={{fontSize: '25px', fontFamily: 'Anton'}}>The Lone Nerd - Coding vigilate to the rescue!</h3>
-                        </p>
-                    </Cell>
-
-                    <Cell col={6}>
-                        <h2>Contact Me</h2>
+                        <h2>Paul Habiger</h2>
+                        <h5>~ AKA ~</h5>
+                        <h4>THE LONE NERD</h4>
+                        </div>
+                            <h3>For the development of YOUR Javascript Application</h3>
                         <hr/>
+                         
+                        
+                    </Cell>
+                    <Cell col={6}>
+                        <h3>Contact Me</h3>
 
                         <div className="contact-list">
-                            <List>
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-phone-square" aria-hidden="true"/>
-                                        (727) 914-9414
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-envelope" aria-hidden="true"/>
-                                        jobforpaulh@gmail.com
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                                        linkedin.com/in/paul-habiger-249292156/
-                                    </ListItemContent>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
-                                        <i className="fa fa-github-square" aria-hidden="true"/>
-                                        github.com/paulhabiger
-                                    </ListItemContent>
-                                </ListItem>
-                            </List>
+                            
+                            <p className="cli"><i className="fa fa-phone-square" aria-hidden="true"/>
+                            (727) 914-9414</p>
+                    
+                            <p className="cli"><i className="fa fa-envelope" aria-hidden="true"/>
+                            jobforpaulh@gmail.com</p>
+                        
+                        
+                            <p className="cli"><i className="fa fa-linkedin-square" aria-hidden="true"/>
+                            linkedin.com/in/paul-habiger-249292156/</p>
+                        
+                            <p className="cli"><i className="fa fa-github-square" aria-hidden="true"/>
+                            github.com/paulhabiger</p>
+                                   
                         </div>
 
                         
@@ -62,4 +53,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default About;

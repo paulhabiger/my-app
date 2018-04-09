@@ -7,7 +7,7 @@ class Landing extends Component {
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img style={{width: '75%', height: "auto"}}
+                        <img
                             src="https://www.shareicon.net/data/512x512/2016/11/28/857840_people_512x512.png"
                             alt="nerd"
                             className="nerd-img"
