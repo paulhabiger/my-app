@@ -1,0 +1,32 @@
+{
+  "name": "jodichemescpa",
+  "version": "1.0.0",
+  "description": "Jodi Chemes, CPA website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulhabiger/jodichemescpa.git"
+  },
+  "keywords": [
+    "Chemes",
+    "CPA"
+  ],
+  "author": "Paul Habiger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulhabiger/jodichemescpa/issues"
+  },
+  "homepage": "https://github.com/paulhabiger/jodichemescpa#readme",
+  "dependencies": {
+    "netlify-cli": "^1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

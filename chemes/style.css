@@ -1,0 +1,639 @@
+body {
+  margin: 0;
+  padding-top: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+
+}
+
+.button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #53a7ea;
+}
+
+/*******************************************/
+/********   NAVIGATION   *******************/
+/*******************************************/
+
+.navigation {
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background:#333;
+  color:#fff;
+  z-index: 100;
+}
+
+.navGrid {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.nav {
+  grid-column: 4/5;
+  justify-self: start;
+  width: 110px;
+}
+
+.navTitle {
+  grid-column: 1/4;
+  display:block;
+  padding:10px 20px;
+  line-height:2.2em;
+  color:#fff;
+}
+
+.navbar {
+  display: none;
+  justify-self: end;
+  padding:15px 20px;
+  grid-column: 3/5;
+}
+
+.navbar a {
+  color: #fff;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: darkgrey;
+}
+
+.nav ul {
+  *zoom:1;
+  list-style:none;
+  margin:0;
+  padding:0;
+  
+}
+
+.nav ul:before,.nav ul:after {
+  content:"";
+  display:table;
+}
+
+.nav ul:after {
+  clear:both;
+}
+
+.nav ul > li {
+  float:left;
+  position:relative;
+}
+
+.nav a {
+  display:block;
+  padding:10px 20px;
+  line-height:1.5em;
+  color:#fff;
+  padding-right: 50px;
+  text-decoration:none;
+}
+
+.nav a:hover {
+  background:darkslategrey;
+}
+
+.nav li ul {
+  background: darkslategrey;
+}
+
+.nav li ul li {
+  width:200px;
+}
+
+.nav li ul a {
+  border:none;
+}
+
+.nav li ul a:hover {
+  background:rgba(0,0,0,0.2);
+}
+
+.nav li ul {
+  position:absolute;
+  left:0;
+  top:36px;
+  z-index:1;
+}
+
+.nav li ul li {
+  padding-right: 25px;
+  overflow:hidden;
+  height:0;
+  -webkit-transition:height 200ms ease-in;
+  -moz-transition:height 200ms ease-in;
+  -o-transition:height 200ms ease-in;
+  transition:height 200ms ease-in;
+}
+
+.nav ul > li:hover ul li {
+  height:36px;
+}
+
+/*******************************/
+/******   HOME   ***************/
+/*******************************/
+
+#titleImg {
+  border-radius: 5px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+
+.homeGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 569px;
+}
+
+.homeGrid > div {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.headImage {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*Content*/
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 30px;
+  grid-gap: 1em;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.social a {
+  text-decoration: none;  
+  color: black;
+}
+
+#qual {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2)
+}
+
+.cardContainer {
+  width: 100%;
+}
+
+.cardTop {
+  padding: 10px;
+}
+
+.cardBottom {
+  height: 60px;
+  border-top: 1px solid lightgrey;
+  background-color: #f4f6f7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardButton {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+
+/********************************************/
+/************   SERVICES PAGE   *************/
+/********************************************/
+
+.containerServices {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+.containerServices p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.containerServices h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.servicesGrid {
+  width: 100%;
+  grid-template-columns: 1fr;
+  max-width: 549px;
+}
+
+.servicesGrid > div {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.servicesGrid h3 {
+  margin-top: 0px;
+}
+
+.serveTop {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.servicesHeadImage {
+  padding-right: 15px;
+}
+
+.serveBottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 596px;
+}
+
+.bounceLeft {
+  padding-right: 5px;
+}
+
+.bounceUp img{
+  background-size: cover;
+}
+
+
+
+/*fade-in on page load*/
+@-webkit-keyframes fadeIn { 
+  from { 
+    opacity:0; opacity: 1\9; /* IE9 only */
+  } to { 
+    opacity:1; 
+  }
+ }
+@-moz-keyframes fadeIn { 
+  from { 
+    opacity:0; opacity: 1\9; /* IE9 only */
+  } to { 
+    opacity:1; 
+  }
+}
+@keyframes fadeIn { 
+  from { 
+    opacity:0; opacity: 1\9; /* IE9 only */
+  } to { 
+    opacity:1; 
+  }
+}
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.two {
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay: 0.6s;
+animation-delay: 0.6s;
+}
+
+.three {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+.four {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.five {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+
+@import "compass/css3";
+
+@-webkit-keyframes moveInL { 
+  0% {
+    transform: translate(-1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+@-moz-keyframes moveInL { 
+  0% {
+    transform: translate(-1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+@keyframes moveInL { 
+  0% {
+    transform: translate(-1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@-webkit-keyframes moveInR { 
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(1000%, 0);
+  }
+}
+@-moz-keyframes moveInR { 
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(1000%, 0);
+  }
+}
+@keyframes moveInR { 
+  0% {
+    transform: translate(1000%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@-webkit-keyframes moveInUp { 
+  0% {
+    transform: translate(0%, 1000%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+@-moz-keyframes moveInUp { 
+  0% {
+    transform: translate(0%, 1000%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+@keyframes moveInUp { 
+  0% {
+    transform: translate(0%, 1000%);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+.bounceNow {
+    animation-name: moveInR;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.5, 1.1, 0, 1);
+    animation-fill-mode: forwards;
+}
+
+.bounceLeft {
+  animation-name: moveInL;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.5, 1.1, 0, 1.05);
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
+
+.bounceLeft2 {
+  animation-name: moveInL;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.5, 1.1, 0, 1.05);
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+}
+
+.bounceUp {
+  animation-name: moveInUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.5, 0.2, 0.5, 1.05);
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+/**************************************/
+/************   RESPONSIVE   **********/
+/**************************************/
+
+@media only screen and (max-width: 575px) {
+  .servicesHeadImage {
+    display: none;
+  }
+
+  .five {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  /*Home*/
+ .homeGrid {
+    margin: auto;
+    width: 559px;
+  }
+
+  .navGrid {
+    margin: auto;
+    width: 559px;
+  }
+
+  /*Services*/
+  .servicesGrid {
+    margin: auto;
+    width: 559px;
+  }
+
+  .serveTop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .servicesHeadImage {
+    grid-column: 1/2;
+  }
+
+  .two {
+    grid-column: 1/4;
+  }
+
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .homeGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 751px;
+    margin: auto;
+  }
+
+  .navGrid {
+    width: 751px;
+  }
+  .headImage {
+    grid-column: 1/4;
+  }
+
+  .heading {
+    grid-column: 1/4;
+  }
+
+  .qual {
+    grid-column: 1/4;
+  }
+
+ .servicesGrid {
+    min-width: 751px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .homeGrid {
+    min-width: 972px;
+  }
+
+  .servicesGrid {
+    min-width: 972px;
+    font-size: 1.3em;
+  }
+
+  .navGrid {
+    width: 972px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .navTitle {
+    grid-column: 1/3;
+  }
+  .navbar {
+    display: block;
+    grid-column: 3/5;
+  }
+
+  .headImage {
+    grid-column: 1/3;
+  }
+
+  .headImage img {
+    margin-top: 40px;
+  }
+
+  .heading {
+    grid-column: 3/4;
+  }
+
+  .qual {
+    grid-column: 1/4;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .homeGrid {
+    min-width: 1186px;
+  }
+
+  .servicesGrid {
+    min-width: 1186px;
+    font-size: 1.4em;
+  }
+
+  .navGrid {
+    width: 1186px;
+  }
+
+  .headImage img {
+    margin-top: 0px;
+  }
+}
